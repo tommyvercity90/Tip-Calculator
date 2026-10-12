@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #01030f, #281a38);
+}
+
+.calculator {
+    width: 100%;
+    max-width: 430px;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #777;
+    margin-bottom: 28px;
+}
+
+.input-group {
+    margin-bottom: 22px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #444;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.12);
+}
+
+.tip-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 18px;
+}
+
+button {
+    cursor: pointer;
+    font-size: 15px;
+    border: none;
+    border-radius: 8px;
+    transition: 0.2s ease;
+}
+
+.tip-btn {
+    padding: 11px 5px;
+    background: #eeeaff;
+    color: #6552b8;
+    font-weight: bold;
+}
+
+.tip-btn:hover {
+    background: #dcd4ff;
+}
+
+.tip-btn.active {
+    background: #6c5ce7;
+    color: white;
+}
+
+.error {
+    color: #d93025;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.results {
+    background: #f7f6ff;
+    border-radius: 12px;
+    padding: 18px;
+    margin-top: 8px;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 17px;
+    color: #555;
+}
+
+.result-row:last-child {
+    margin-bottom: 0;
+}
+
+.result-row strong {
+    color: #333;
+    font-size: 17px;
+    overflow-wrap: anywhere;
+}
+
+.highlight {
+    border-top: 1px solid #ddd7ff;
+    padding-top: 17px;
+    color: #5c48c9;
+    font-weight: bold;
+}
+
+.highlight strong {
+    color: #5c48c9;
+    font-size: 20px;
+}
+
+.reset-btn {
+    width: 100%;
+    padding: 13px;
+    margin-top: 20px;
+    background: #333;
+    color: white;
+    font-weight: bold;
+}
+
+.reset-btn:hover {
+    background: #555;
+}
+
+@media (max-width: 400px) {
+    .calculator {
+        padding: 22px 18px;
+    }
+
+    .result-row strong {
+        font-size: 15px;
+    }
+
+    .highlight strong {
+        font-size: 17px;
+    }
+}
